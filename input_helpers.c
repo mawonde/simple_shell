@@ -7,12 +7,12 @@ int handle_arguments(int *exe_ret);
 int check_arguments(char **args);
 
 /**
- * get_arguments - Gets a command from standard input.
+ * get_argumentss - Gets a command from standard input.
  * @line: A buffer to store the command.
  * @exe_ret: The return value of the last executed command.
  *
  * Return: If an error occurs - NULL.
- *         Otherwise - a pointer to the stored command.
+ * Otherwise - a pointer to the stored command.
  */
 char *get_argumentss(char *line, int *exe_ret)
 {

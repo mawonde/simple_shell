@@ -21,7 +21,8 @@ char *error_env(char **args)
 		return (NULL);
 
 	args--;
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(args[0]) + 45;
+len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(args[0]) + 45;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{
@@ -78,7 +79,8 @@ char *error_b_exit(char **args)
 	if (!hist_str)
 		return (NULL);
 
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(args[0]) + 27;
+	len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(args[0]) + 27;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{
@@ -114,7 +116,8 @@ char *error_c_cd(char **args)
 
 	if (args[0][0] == '-')
 		args[0][2] = '\0';
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(args[0]) + 24;
+	len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(args[0]) + 24;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{
@@ -151,7 +154,8 @@ char *error_syntax(char **args)
 	if (!hist_str)
 		return (NULL);
 
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(args[0]) + 33;
+	len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(args[0]) + 33;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{

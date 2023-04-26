@@ -16,7 +16,8 @@ void env_help(void)
 }
 
 /**
- * setenv_help - Displays information on the simple_shell builtin command 'setenv'.
+ * setenv_help - Displays information
+ * on the simple_shell builtin command 'setenv'.
  */
 void setenv_help(void)
 {
