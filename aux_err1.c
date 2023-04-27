@@ -18,7 +18,8 @@ char *error_126(char **args)
 	if (!hist_str)
 		return (NULL);
 
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(args[0]) + 24;
+len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(args[0]) + 24;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{
@@ -51,8 +52,8 @@ char *error_127(char **args)
 	hist_str = _itoa(hist);
 	if (!hist_str)
 		return (NULL);
-
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(args[0]) + 16;
+len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(args[0]) + 16;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{

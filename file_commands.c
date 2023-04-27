@@ -20,7 +20,8 @@ int open_failure(char *file_path)
 	if (!hist_str)
 		return (127);
 
-	len = custom_strlen(name) + custom_strlen(hist_str) + custom_strlen(file_path) + 16;
+	len = custom_strlen(name)
++ custom_strlen(hist_str) + custom_strlen(file_path) + 16;
 	error = malloc(sizeof(char) * (len + 1));
 	if (!error)
 	{

@@ -15,7 +15,10 @@
 #define END_OF_FILE -2
 #define EXIT -3
 
-/*This variable is used to pass the environment variables to the execve function.*/
+/**
+* This variable is used to pass the environment
+* variables to the execve function.
+*/
 extern char **environ;
 /* Program name */
 char *name;
@@ -136,4 +139,4 @@ void unsetenv_help(void);
 void history_help(void);
 
 int file_commands(char *file_path, int *exe_ret);
-#endif 
+#endif
