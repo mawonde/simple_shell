@@ -98,7 +98,7 @@ void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b)
 ssize_t get_line(char **lineptr, size_t *n, FILE *stream)
 {
 	static ssize_t input;
-	ssize_t ret;
+	static ssize_t ret;
 	char c = 'x', *buffer;
 	int r;
 
